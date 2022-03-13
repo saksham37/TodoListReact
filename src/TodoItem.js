@@ -1,8 +1,8 @@
 import React from "react";
 
 const TodoItem = (props) => {
-  const { item, onhandleChange } = props;
-  console.log(onhandleChange);
+  const { item, onHandleChange } = props;
+  // console.log(onHandleChange);
 
   return (
     <div className="todo-item">
@@ -10,7 +10,7 @@ const TodoItem = (props) => {
         type="checkbox"
         checked={item.completed}
         onChange={() => {
-          onhandleChange(item);
+          onHandleChange(item);
         }}
       />
       <label> {item.text} </label>
